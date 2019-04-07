@@ -1,0 +1,104 @@
+@lancolor:#00bbee;
+@qiancolor:#e8f5f8;
+.gz_xx {
+    margin-top: 10px;
+    h3 {
+       background: @qiancolor;
+       >span {
+           display: inline-block;
+           color: #fff;
+           background: @lancolor;
+           padding: 10px 15px;
+           margin-left: 10px;
+       }
+    }
+    h4 {
+       margin: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        a {
+            text-align: center;
+            width: 30%;
+            padding: 10px 0;
+            background: #ccc;
+            color: #666666;
+            border-radius: 6px;
+        }
+    }
+    ul {
+        width: 100%;
+        li {
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+             justify-content:space-around;
+           a {
+               color: #333;
+               &:before {
+                   content: "";
+                   display: inline-block;
+                   width: 5px;
+                   height: 5px;
+                   background: #333;
+                   margin-right: 5px;
+                   vertical-align: 1px;
+               }
+           }
+        }
+    }
+}
+.gz_yijian {
+    margin: 10px 0;
+    h3 {
+        display: flex;
+        a {
+            flex: 1;
+            padding: 10px 0;
+            color: #000000;
+            text-align: center;
+            &:nth-child(1) {
+                background: @lancolor;
+                color: #fff;
+            }
+        }
+    }
+    ul {
+        li {
+            display: flex;
+            padding: 5px 0;
+            justify-content: space-between;
+            a {
+                color: #333;
+               &:before {
+                   content: "";
+                   display: inline-block;
+                   width: 5px;
+                   height: 5px;
+                   background: #333;
+                   margin-right: 5px;
+                   vertical-align: 1px;
+               }
+            }
+            span {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+.gz_xiaoliu {
+    ul {
+        li {
+            text-align: center;
+            padding: 10px 0;
+            background: #B2B2B2;
+            margin-top: 10px;
+            color: @lancolor;
+            span {
+                color: @lancolor;
+                font-size: 30px;
+                vertical-align: -6px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

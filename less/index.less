@@ -1,12 +1,13 @@
 @lancolor:#00bbee;
 @qiancolor:#e8f5f8;
 .contaitent {
+    overflow: hidden;
     width: 100%;
     max-width: 640px;
     min-width: 320px;
-    height: 1000px;
-    background: pink;
+//  background: pink;
     margin: 0 auto;
+    position: relative;
     .nav {
         ul {
             display: flex;
@@ -147,5 +148,238 @@
                 border-radius: 50%;
 }
          }
+    }
+//  查看更多按钮
+button {
+    width: 100%;
+    padding: 8px 0;
+    background: #eee;
+    color: #696969;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+//国务院部分
+    .gz_gwy {
+        display: flex;
+        justify-content: space-between;
+        b {
+             flex: 0.05;
+         }
+        a{
+         background: #eee;   
+         padding: 10px 0 5px 5px;
+         color: #333;
+         border-radius: 3px;
+         box-sizing: border-box;
+         flex: 1;
+         
+         
+         img {
+             vertical-align: middle;
+             width: 30px;
+         }
+        }
+    }
+//  专题专栏
+    .gz_ztzl {
+        margin-top: 10px;
+       
+        .gz_ztzl_top {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+             background: #eee;
+            p{
+                padding: 10px 15px;
+                background: @lancolor;
+                color: #fff;
+            }
+            span {
+               padding: 10px 0;
+                padding-right: 10px;
+                line-height: 100%;
+            }
+        }
+        .gz_ztzl_img {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            img{
+                width: 47%;
+                height: 60px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .gz_szfwn {
+        margin-top: 10px;
+        dt{
+            width: 100%;
+            background: @lancolor;
+            text-align: center;
+            color: #fff;
+            padding: 10px 0;
+        }
+        dd{
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        
+    }
+    .gz_wj {
+        display: flex;
+        p{
+            flex: 0.5;
+            box-sizing: border-box;
+            padding: 10px 10px;
+            font-size: 10px;
+            color: #fff;
+        }
+        input{
+            flex:6;
+            height: 24px;
+            margin-top: 8px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+    }
+//  信息公开
+    .gz_gk {
+        margin-top: 10px;
+        .gz_gk_top {
+            display: flex;
+            p{
+                flex: 1;
+               text-align: center;
+               color: #000;
+               padding: 10px 0;
+            }
+            >p:nth-child(1){
+                background: @lancolor;
+                color: #fff;
+            }
+        }
+        >ul {
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            li {
+                width: 30%;
+                text-align: center;
+                margin-top: 10px;
+                p{
+                    margin-top: 15px;
+                    color: #666;
+                }
+            }
+        }
+       .gz_gk_bot {
+           margin: 0 10px;
+           margin-top: 10px;
+           ul {
+               border: 1px solid #ccc;
+               display: flex;
+               li {
+                   flex: 1;
+                   text-align: center;
+                   justify-content:space-around;
+                   padding: 5px 0;
+                   &:nth-child(2) {
+                       border-left: 1px solid #ccc;
+                       border-right: 1px solid #ccc;
+                   }
+                   &:nth-child(3) {
+                       flex: 1.5;
+                   }
+                   a{
+                       color: #fff;
+                        background: @lancolor; 
+//                      font-size: 18px;
+                        display: inline-block;
+                        width: 80%;
+                        padding: 10px 0;
+                        box-sizing: border-box;
+                        justify-content: center;
+                   }
+                  
+               }
+           }
+       } 
+    }
+    .gz_yj {
+        margin-top: 10px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                width: 49%;
+                padding: 10px 0;
+                text-align: center;
+                background: @qiancolor;
+                margin-top: 10px;
+                font-weight: 500;
+                span {
+                    background: @lancolor;
+                    color: #fff;
+                    border-radius: 40%;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .footer {
+        margin-top: 10px;
+        background: #696969;
+        padding: 30px 0;
+        ul {
+             display: flex;
+            li {
+                flex: 1;
+                text-align: center;
+                box-sizing: border-box;
+                a {
+                    color:#fff;
+                } 
+                &:nth-child(1){
+                    border-right: 2px solid #fff;
+                }
+            }
+        }
+    }
+    .gz_fh {
+        background: @lancolor;
+        border-radius: 6px;
+        position: fixed;
+        right: 2px;
+        bottom: 10px;
+        padding: 0 10px;
+        text-align: center;
+        width: 32px;
+        color: #fff;
+        padding-bottom: 5px;
+        span {
+            display: inline-block;
+            transform: rotateZ(90deg);
+        }
+        p {
+            width: 32px;
+        }
+    }
+}
+.tongyong1 {
+    margin: 10px 0;
+    background: @qiancolor;
+    span {
+        display: inline-block;
+        padding: 10px 10px;
+        background: @lancolor;
+        color: #fff;
+        margin-left: 5px;
     }
 }
