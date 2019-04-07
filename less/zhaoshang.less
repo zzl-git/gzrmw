@@ -1,0 +1,125 @@
+@lancolor:#00bbee;
+@qiancolor:#e8f5f8;
+.gz_zsdt {
+    ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            span {
+                padding-right: 5px;
+            }
+            a {
+                color: #000;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 2px;
+                    height: 2px;
+                    background: #000;
+                    vertical-align: 2px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+.gz_tzzc {
+    margin: 10px 0;
+    h3 {
+        display: flex;
+        span {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+            &:nth-child(1) {
+                color: @lancolor;
+                border-bottom: 1px solid @lancolor;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li {
+            width: 32%;
+            text-align: center;
+            margin-top: 15px;
+            img {
+                width: 30%;
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.gz_zsxmk {
+    margin: 10px 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: 49%;
+            text-align: center;
+            padding: 15px 0;
+            margin: 5px 0;
+            background: @lancolor;
+            color: #fff;
+        }
+    }
+}
+.gz_bmlj {
+    h3 {
+        display: flex;
+        span {
+            flex: 1;
+            text-align: center;
+            background: @qiancolor;
+            color: #000;
+            padding: 10px 0;
+            &:nth-child(1) {
+                background: @lancolor;
+                color: #fff;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 2px;
+                height: 2px;
+                background: #000;
+                vertical-align: 2px;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+.gz_daoshantupian {
+    margin: 10px 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       li {
+            width: 49%;
+            margin-top: 10px;
+            img {
+                width: 100%;
+                height: 50px;
+            }
+       }
+    }
+}

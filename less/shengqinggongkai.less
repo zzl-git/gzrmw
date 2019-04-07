@@ -1,0 +1,32 @@
+@lancolor:#00bbee;
+@qiancolor:#e8f5f8;
+.gz_ycgk {
+    h4 {
+        background: @qiancolor;
+        color: @lancolor;
+        padding: 10px 0;
+    }
+    h2 {
+       
+        padding: 10px 0;
+        font-size: 16px;
+        background: @qiancolor;
+        color: @lancolor;
+        margin: 15px 8px;
+        border-left: 2px solid @lancolor;
+        &:before {
+            content: ">";
+            font-weight: 900;
+           font-size: 10px;
+            color: @lancolor;
+            margin-left: -2px;
+            margin-right: 2px;
+            vertical-align: middle;
+        }
+       
+    }
+    p {
+        padding: 15px 0 15px 15px;
+        color: #333333;
+    }
+}
